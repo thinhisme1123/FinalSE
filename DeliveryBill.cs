@@ -76,11 +76,12 @@ namespace FinalProjectSE
             cm.ExecuteNonQuery();
 
             // Insert a new row into the manageProductExport table with the same proName as the corresponding row in the manageProductImport table
-            string createMPExport = "INSERT INTO manageProductExport (idProduct, productName, quantitySold) VALUES (@proId, (SELECT productName FROM manageProductImport WHERE idProduct = @idProduct), @quantitySold)";
+            string createMPExport = "INSERT INTO manageProductExport (idProduct, productName, quantitySold,price) VALUES (@proId, (SELECT productName FROM manageProductImport WHERE idProduct = @idProduct), @quantitySold, (SELECT price FROM productInfor WHERE idProduct = @idProduct))";
             SqlCommand cm1 = new SqlCommand(createMPExport, cn);
             cm1.Parameters.AddWithValue("@idProduct", idProduct.Text);
             cm1.Parameters.AddWithValue("@proId", idProduct.Text);
             cm1.Parameters.AddWithValue("@quantitySold", quantity.Text);
+
             cm1.ExecuteNonQuery();
 
             int checkAddingMGI = cm.ExecuteNonQuery();

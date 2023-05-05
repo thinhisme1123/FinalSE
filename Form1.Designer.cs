@@ -35,8 +35,6 @@
             this.userTxt = new System.Windows.Forms.TextBox();
             this.loginBtn = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.grdtest = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.grdtest)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -103,22 +101,11 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // grdtest
-            // 
-            this.grdtest.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdtest.Location = new System.Drawing.Point(92, 206);
-            this.grdtest.Name = "grdtest";
-            this.grdtest.RowHeadersWidth = 51;
-            this.grdtest.RowTemplate.Height = 24;
-            this.grdtest.Size = new System.Drawing.Size(554, 139);
-            this.grdtest.TabIndex = 7;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(770, 359);
-            this.Controls.Add(this.grdtest);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.loginBtn);
             this.Controls.Add(this.userTxt);
@@ -129,7 +116,6 @@
             this.Name = "Form1";
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.grdtest)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -144,7 +130,6 @@
         private System.Windows.Forms.TextBox userTxt;
         private System.Windows.Forms.Button loginBtn;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView grdtest;
     }
 }
 

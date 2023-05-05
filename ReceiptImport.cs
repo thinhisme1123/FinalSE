@@ -53,7 +53,7 @@ namespace FinalProjectSE
                 // Retrieve the total price as a single value from the first row and first column of the DataTable
                 int totalPrice = (int)tb.Rows[0]["totalPrice"];
 
-                string createReceipt = "insert into detailReceipt values (@idReceipt,@idAccountant,@creationData,@totalPrice)";
+                string createReceipt = "insert into detailReceipt (idReceipt,idAccountant,creationData,totalPrice,goods) values (@idReceipt,@idAccountant,@creationData,@totalPrice,(SELECT STRING_AGG(idProduct, ',') FROM productInfor))";
                 cm = new SqlCommand(createReceipt, cn);
                 cm.Parameters.AddWithValue("@idReceipt", idReceipt.Text);
                 cm.Parameters.AddWithValue("@idAccountant", idAccountant.Text);
@@ -70,6 +70,10 @@ namespace FinalProjectSE
                     tb = new DataTable();
                     data.Fill(tb);
                     dtReceipt.DataSource = tb;
+                    //delete all data in productInfor, reset to the empty
+                    //string deleteProinfo = "delete from productInfor";
+                    //SqlCommand deleProinfo = new SqlCommand(deleteProinfo, cn);
+                    //deleProinfo.ExecuteNonQuery();
                 }
                 else
                 {
@@ -90,12 +94,22 @@ namespace FinalProjectSE
             cm.Parameters.AddWithValue("@proName", namePro.Text);
             cm.Parameters.AddWithValue("@quantity", Quantity.Text);
             cm.Parameters.AddWithValue("@price", price.Text);
+            //update 
+            string updateQuantity = "update manageProductImport set availabelQuantity = availabelQuantity + @quantity where idProduct = @idProduct";
+            SqlCommand upavaiQauntity = new SqlCommand(updateQuantity, cn);
+            upavaiQauntity.Parameters.AddWithValue("quantity", Quantity.Text);
+            upavaiQauntity.Parameters.AddWithValue("idProduct", idProduct.Text);
+
+
+
             //adding product to mamnage product
-            string addManage = "insert into manageProductImport values (@proId,@proName,@quantitySold)";
+            string addManage = "insert into manageProductImport values (@proId,@proName,@quantitySold,@availabelQuantity,@price)";
             SqlCommand cm1 = new SqlCommand(addManage, cn);
             cm1.Parameters.AddWithValue("@proId", idProduct.Text);
             cm1.Parameters.AddWithValue("@proName", namePro.Text);
             cm1.Parameters.AddWithValue("@quantitySold", 0);
+            cm1.Parameters.AddWithValue("@availabelQuantity", Quantity.Text);
+            cm1.Parameters.AddWithValue("@price", price.Text);
 
 
 

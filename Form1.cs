@@ -28,6 +28,7 @@ namespace FinalProjectSE
         {
             cn = new SqlConnection(strConn);
             cn.Open();
+            
         }
 
         private void loginBtn_Click(object sender, EventArgs e)
