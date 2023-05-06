@@ -45,7 +45,7 @@ namespace FinalProjectSE
             else
             {
                 MessageBox.Show("Create Successfully !");
-                string calcTotalPrice = "SELECT SUM(quantity * price) AS totalPrice FROM productInfor";
+                string calcTotalPrice = "SELECT SUM(quantity * price) AS totalPrice FROM temptProductInfor";
                 data = new SqlDataAdapter(calcTotalPrice, cn);
                 tb = new DataTable();
                 data.Fill(tb);
@@ -53,7 +53,7 @@ namespace FinalProjectSE
                 // Retrieve the total price as a single value from the first row and first column of the DataTable
                 int totalPrice = (int)tb.Rows[0]["totalPrice"];
 
-                string createReceipt = "insert into detailReceipt (idReceipt,idAccountant,creationData,totalPrice,goods) values (@idReceipt,@idAccountant,@creationData,@totalPrice,(SELECT STRING_AGG(idProduct, ',') FROM productInfor))";
+                string createReceipt = "insert into detailReceipt (idReceipt,idAccountant,creationData,totalPrice,goods) values (@idReceipt,@idAccountant,@creationData,@totalPrice,(SELECT STRING_AGG(idsProduct, ',') FROM temptProductInfor))";
                 cm = new SqlCommand(createReceipt, cn);
                 cm.Parameters.AddWithValue("@idReceipt", idReceipt.Text);
                 cm.Parameters.AddWithValue("@idAccountant", idAccountant.Text);
@@ -94,6 +94,14 @@ namespace FinalProjectSE
             cm.Parameters.AddWithValue("@proName", namePro.Text);
             cm.Parameters.AddWithValue("@quantity", Quantity.Text);
             cm.Parameters.AddWithValue("@price", price.Text);
+            //adding to temptProduct
+            string addtoTemproduct = "insert into temptProductInfor values (@proId,@quantity,@price)";
+            SqlCommand temtProduct = new SqlCommand(addtoTemproduct, cn);
+            temtProduct.Parameters.AddWithValue("@proId", idProduct.Text);
+            temtProduct.Parameters.AddWithValue("@quantity", Quantity.Text);
+            temtProduct.Parameters.AddWithValue("@price", price.Text);
+            temtProduct.ExecuteNonQuery();
+
             //update 
             string updateQuantity = "update manageProductImport set availabelQuantity = availabelQuantity + @quantity where idProduct = @idProduct";
             SqlCommand upavaiQauntity = new SqlCommand(updateQuantity, cn);
@@ -110,7 +118,6 @@ namespace FinalProjectSE
             cm1.Parameters.AddWithValue("@quantitySold", 0);
             cm1.Parameters.AddWithValue("@availabelQuantity", Quantity.Text);
             cm1.Parameters.AddWithValue("@price", price.Text);
-
 
 
             // Execute the query
