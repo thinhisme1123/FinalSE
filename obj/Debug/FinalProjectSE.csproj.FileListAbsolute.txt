@@ -226,3 +226,7 @@ D:\DaiHoc\Hoc Ki 4\Software Engineering\Final\FinalSE\obj\Debug\FinalProjectSE.a
 D:\DaiHoc\Hoc Ki 4\Software Engineering\Final\FinalSE\obj\Debug\FinalProjectSE.agentPay.resources
 D:\DaiHoc\Hoc Ki 4\Software Engineering\Final\FinalSE\obj\Debug\FinalProjectSE.agentLogin.resources
 D:\DaiHoc\Hoc Ki 4\Software Engineering\Final\FinalSE\obj\Debug\FinalProjectSE.agentAdd.resources
+C:\Users\PC\OneDrive\Documents\GitHub\FinalSE\obj\Debug\FinalProjectSE.agentLogin.resources
+C:\Users\PC\OneDrive\Documents\GitHub\FinalSE\obj\Debug\FinalProjectSE.agentOrder.resources
+C:\Users\PC\OneDrive\Documents\GitHub\FinalSE\obj\Debug\FinalProjectSE.agentPay.resources
+C:\Users\PC\OneDrive\Documents\GitHub\FinalSE\obj\Debug\FinalProjectSE.agentAdd.resources

@@ -71,9 +71,9 @@ namespace FinalProjectSE
                     data.Fill(tb);
                     dtReceipt.DataSource = tb;
                     //delete all data in productInfor, reset to the empty
-                    //string deleteProinfo = "delete from productInfor";
-                    //SqlCommand deleProinfo = new SqlCommand(deleteProinfo, cn);
-                    //deleProinfo.ExecuteNonQuery();
+                    string deleteProinfo = "delete from temptProductInfor";
+                    SqlCommand deleProinfo = new SqlCommand(deleteProinfo, cn);
+                    deleProinfo.ExecuteNonQuery();
                 }
                 else
                 {
