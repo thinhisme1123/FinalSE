@@ -1,13 +1,19 @@
 create database ManagePhoneProduct;
 
-create table accLogin(
+create table accLoginStaff( --
 	username varchar(20),
-	password varchar(30)
+	userpass varchar(30) --
 );
 
+create table agentInfo (
+	agentID varchar(10),
+	agentName varchar(20),
+	agentpass varchar(20)
+);
 
-insert into accLogin values ('thinhisme','123456');
-select * from accLogin
+insert into accLoginStaff values ('thinhisme','123456');
+insert into accLoginStaff values ('ludazzzz','123456');
+select * from accLoginStaff
 
 create table productInfor(
 	idProduct varchar(20) PRIMARY KEY,
@@ -15,6 +21,7 @@ create table productInfor(
 	quantity int,
 	price int
 );
+
 create table temptProductInfor (
 	idsProduct varchar(20)
 );
@@ -64,11 +71,9 @@ create table deliveryBill (
 );
 --delete from productInfor
 create table revenueMonth( 
-	time date,
+	monthTime date, --
 	revenueMonthly int
 );
 --delete from deliveryBill
 --select * from productInfor
 --delete from manageProductExport where idProduct = 'pro05'
-
-
