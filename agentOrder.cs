@@ -10,25 +10,26 @@ using System.Windows.Forms;
 
 namespace FinalProjectSE
 {
-    public partial class App : Form
+    public partial class agentOrder : Form
     {
-        public App()
+        public agentOrder()
         {
             InitializeComponent();
         }
-        private void staffSection_Click(object sender, EventArgs e)
-        {
-            Form1 Form1 = new Form1();
-            this.Hide();
-            Form1.ShowDialog();
-            this.Close();
-        }
 
-        private void agentSection_Click(object sender, EventArgs e)
+        private void backBtn_Click(object sender, EventArgs e)
         {
             agentLogin al = new agentLogin();
             this.Hide();
             al.ShowDialog();
+            this.Close();
+        }
+
+        private void nextBtn_Click(object sender, EventArgs e)
+        {
+            agentPay ap = new agentPay();
+            this.Hide();
+            ap.ShowDialog();
             this.Close();
         }
     }

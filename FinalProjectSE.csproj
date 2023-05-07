@@ -199,6 +199,30 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="agentOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="agentOrder.Designer.cs">
+      <DependentUpon>agentOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="agentPay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="agentPay.Designer.cs">
+      <DependentUpon>agentPay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="agentLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="agentLogin.Designer.cs">
+      <DependentUpon>agentLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="agentAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="agentAdd.Designer.cs">
+      <DependentUpon>agentAdd.cs</DependentUpon>
+    </Compile>
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -225,6 +249,15 @@
     <Compile Include="RevenueMonthly.Designer.cs">
       <DependentUpon>RevenueMonthly.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="agentLogin.resx">
+      <DependentUpon>agentLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="agentOrder.resx">
+      <DependentUpon>agentOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="agentPay.resx">
+      <DependentUpon>agentPay.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="App.resx">
       <DependentUpon>App.cs</DependentUpon>
     </EmbeddedResource>
@@ -233,6 +266,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="agentAdd.resx">
+      <DependentUpon>agentAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>

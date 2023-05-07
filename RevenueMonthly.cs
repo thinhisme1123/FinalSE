@@ -38,5 +38,13 @@ namespace FinalProjectSE
             data.Fill(tb);
             revenueGrd.DataSource = tb;
         }
+
+        private void backBtn_Click(object sender, EventArgs e)
+        {
+            Home Home = new Home();
+            this.Hide();
+            Home.ShowDialog();
+            this.Close();
+        }
     }
 }

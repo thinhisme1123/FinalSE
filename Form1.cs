@@ -37,7 +37,7 @@ namespace FinalProjectSE
             /* try
            {
 
-               string sql = "SELECT * FROM accLogin WHERE username = @Username AND password = @Password";
+               string sql = "SELECT * FROM accLogin WHERE username = @Username AND userpass = @Password";
                data = new SqlDataAdapter(sql, cn);
                data.SelectCommand.Parameters.AddWithValue("@Username", userTxt.Text);
                data.SelectCommand.Parameters.AddWithValue("@Password", passTxt.Text);
@@ -62,13 +62,19 @@ namespace FinalProjectSE
            } */
 
             Home home = new Home();
-            home.Show();
-            this.Visible = false;
-        }
-        // exit program
-        private void button1_Click(object sender, EventArgs e)
-        {
+            this.Hide();
+            home.ShowDialog();
             this.Close();
         }
+
+        private void backBtn_Click(object sender, EventArgs e)
+        {
+            App App = new App();
+            this.Hide();
+            App.ShowDialog();
+            this.Close();
+        }
+        // exit program
+
     }
 }

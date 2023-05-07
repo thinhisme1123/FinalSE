@@ -46,6 +46,7 @@
             this.findNameEx = new System.Windows.Forms.Button();
             this.nameInputEx = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.backBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.productGrd)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -94,7 +95,7 @@
             this.findBtnName.Name = "findBtnName";
             this.findBtnName.Size = new System.Drawing.Size(113, 23);
             this.findBtnName.TabIndex = 5;
-            this.findBtnName.Text = "FInd Name";
+            this.findBtnName.Text = "Find Name";
             this.findBtnName.UseVisualStyleBackColor = true;
             this.findBtnName.Click += new System.EventHandler(this.findBtnName_Click);
             // 
@@ -116,19 +117,20 @@
             // 
             // findBtnid
             // 
-            this.findBtnid.Location = new System.Drawing.Point(334, 64);
+            this.findBtnid.Location = new System.Drawing.Point(353, 65);
             this.findBtnid.Name = "findBtnid";
             this.findBtnid.Size = new System.Drawing.Size(75, 23);
             this.findBtnid.TabIndex = 8;
-            this.findBtnid.Text = "FInd ID";
+            this.findBtnid.Text = "Find ID";
             this.findBtnid.UseVisualStyleBackColor = true;
             this.findBtnid.Click += new System.EventHandler(this.findBtnid_Click);
             // 
             // exportBtn
             // 
-            this.exportBtn.Location = new System.Drawing.Point(156, 102);
+            this.exportBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exportBtn.Location = new System.Drawing.Point(138, 94);
             this.exportBtn.Name = "exportBtn";
-            this.exportBtn.Size = new System.Drawing.Size(159, 24);
+            this.exportBtn.Size = new System.Drawing.Size(184, 32);
             this.exportBtn.TabIndex = 10;
             this.exportBtn.Text = "List Export Product";
             this.exportBtn.UseVisualStyleBackColor = true;
@@ -136,9 +138,10 @@
             // 
             // importBtn
             // 
-            this.importBtn.Location = new System.Drawing.Point(150, 93);
+            this.importBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.importBtn.Location = new System.Drawing.Point(143, 93);
             this.importBtn.Name = "importBtn";
-            this.importBtn.Size = new System.Drawing.Size(159, 24);
+            this.importBtn.Size = new System.Drawing.Size(185, 35);
             this.importBtn.TabIndex = 11;
             this.importBtn.Text = "List Import Product";
             this.importBtn.UseVisualStyleBackColor = true;
@@ -158,7 +161,7 @@
             this.groupBox1.Size = new System.Drawing.Size(450, 134);
             this.groupBox1.TabIndex = 12;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Export";
+            this.groupBox1.Text = "Import";
             // 
             // groupBox2
             // 
@@ -178,11 +181,11 @@
             // 
             // findIDEx
             // 
-            this.findIDEx.Location = new System.Drawing.Point(328, 69);
+            this.findIDEx.Location = new System.Drawing.Point(347, 69);
             this.findIDEx.Name = "findIDEx";
             this.findIDEx.Size = new System.Drawing.Size(75, 23);
             this.findIDEx.TabIndex = 12;
-            this.findIDEx.Text = "FInd ID";
+            this.findIDEx.Text = "Find ID";
             this.findIDEx.UseVisualStyleBackColor = true;
             this.findIDEx.Click += new System.EventHandler(this.findBtnEx_Click);
             // 
@@ -208,7 +211,7 @@
             this.findNameEx.Name = "findNameEx";
             this.findNameEx.Size = new System.Drawing.Size(113, 23);
             this.findNameEx.TabIndex = 12;
-            this.findNameEx.Text = "FInd Name";
+            this.findNameEx.Text = "Find Name";
             this.findNameEx.UseVisualStyleBackColor = true;
             this.findNameEx.Click += new System.EventHandler(this.findNameEx_Click);
             // 
@@ -228,11 +231,24 @@
             this.label4.TabIndex = 12;
             this.label4.Text = "FInd Item by Name";
             // 
+            // backBtn
+            // 
+            this.backBtn.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backBtn.Location = new System.Drawing.Point(11, 9);
+            this.backBtn.Name = "backBtn";
+            this.backBtn.Size = new System.Drawing.Size(114, 42);
+            this.backBtn.TabIndex = 14;
+            this.backBtn.Text = "BACK";
+            this.backBtn.UseVisualStyleBackColor = true;
+            this.backBtn.Click += new System.EventHandler(this.backBtn_Click);
+            // 
             // MangeProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(972, 470);
+            this.Controls.Add(this.backBtn);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
@@ -270,5 +286,6 @@
         private System.Windows.Forms.Button findNameEx;
         private System.Windows.Forms.TextBox nameInputEx;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button backBtn;
     }
 }
