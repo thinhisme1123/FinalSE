@@ -13,7 +13,7 @@ create table agentInfo (
 
 insert into accLoginStaff values ('thinhisme','123456');
 insert into accLoginStaff values ('ludazzzz','123456');
-select * from accLoginStaff
+select * from productInfor
 
 create table productInfor(
 	idProduct varchar(20) PRIMARY KEY,
@@ -21,6 +21,7 @@ create table productInfor(
 	quantity int,
 	price int
 );
+
 
 create table temptProductInfor (
 	idsProduct varchar(20)

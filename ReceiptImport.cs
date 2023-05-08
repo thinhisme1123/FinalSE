@@ -38,6 +38,7 @@ namespace FinalProjectSE
         private void createBtn_Click(object sender, EventArgs e)
         {
             //check user add item before create receipt
+            //test thử commit 
             if(dk == 0)
             {
                 MessageBox.Show("You must add item first !");
