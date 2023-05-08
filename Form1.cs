@@ -34,10 +34,10 @@ namespace FinalProjectSE
         private void loginBtn_Click(object sender, EventArgs e)
         {
 
-            /* try
+            try
            {
 
-               string sql = "SELECT * FROM accLogin WHERE username = @Username AND userpass = @Password";
+               string sql = "SELECT * FROM accLoginStaff WHERE username = @Username AND userpass = @Password";
                data = new SqlDataAdapter(sql, cn);
                data.SelectCommand.Parameters.AddWithValue("@Username", userTxt.Text);
                data.SelectCommand.Parameters.AddWithValue("@Password", passTxt.Text);
@@ -48,8 +48,9 @@ namespace FinalProjectSE
                if (tb.Rows.Count == 1)
                {
                    Home home = new Home();
-                   home.Show();
-                   this.Visible = false;
+                    this.Hide();
+                   home.ShowDialog();
+                   this.Close();
                }
                else
                {
@@ -59,12 +60,9 @@ namespace FinalProjectSE
            catch (Exception ex)
            {
                MessageBox.Show("Error: " + ex.Message);
-           } */
+           } 
 
-            Home home = new Home();
-            this.Hide();
-            home.ShowDialog();
-            this.Close();
+            
         }
 
         private void backBtn_Click(object sender, EventArgs e)

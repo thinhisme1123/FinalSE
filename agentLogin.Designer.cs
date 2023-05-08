@@ -120,6 +120,7 @@
             this.Controls.Add(this.label1);
             this.Name = "agentLogin";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.agentLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
