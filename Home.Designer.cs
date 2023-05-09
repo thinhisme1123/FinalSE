@@ -40,7 +40,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(167, 254);
+            this.button1.Location = new System.Drawing.Point(76, 304);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(162, 62);
             this.button1.TabIndex = 0;
@@ -51,7 +51,7 @@
             // receiptImport
             // 
             this.receiptImport.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.receiptImport.Location = new System.Drawing.Point(167, 115);
+            this.receiptImport.Location = new System.Drawing.Point(76, 115);
             this.receiptImport.Name = "receiptImport";
             this.receiptImport.Size = new System.Drawing.Size(162, 62);
             this.receiptImport.TabIndex = 1;
@@ -62,7 +62,7 @@
             // delBill
             // 
             this.delBill.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.delBill.Location = new System.Drawing.Point(494, 115);
+            this.delBill.Location = new System.Drawing.Point(560, 115);
             this.delBill.Name = "delBill";
             this.delBill.Size = new System.Drawing.Size(162, 62);
             this.delBill.TabIndex = 2;
@@ -73,7 +73,7 @@
             // revenMonth
             // 
             this.revenMonth.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.revenMonth.Location = new System.Drawing.Point(494, 254);
+            this.revenMonth.Location = new System.Drawing.Point(560, 304);
             this.revenMonth.Name = "revenMonth";
             this.revenMonth.Size = new System.Drawing.Size(162, 62);
             this.revenMonth.TabIndex = 3;
@@ -105,7 +105,7 @@
             // addBtn
             // 
             this.addBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addBtn.Location = new System.Drawing.Point(626, 365);
+            this.addBtn.Location = new System.Drawing.Point(329, 211);
             this.addBtn.Name = "addBtn";
             this.addBtn.Size = new System.Drawing.Size(162, 62);
             this.addBtn.TabIndex = 8;

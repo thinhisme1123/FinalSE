@@ -15,6 +15,7 @@ namespace FinalProjectSE
 {
     public partial class agentLogin : Form
     {
+        public static string AgentID = "";
 
         SqlConnection cn;
         SqlDataAdapter data;
@@ -48,6 +49,7 @@ namespace FinalProjectSE
                 SqlDataReader readerLogin = cm.ExecuteReader();
                 if (readerLogin.HasRows)
                 {
+                    AgentID = userTxt.Text;
                     agentOrder ao = new agentOrder();
                     this.Hide();
                     ao.ShowDialog();
@@ -55,6 +57,7 @@ namespace FinalProjectSE
                 }
                 else
                 {
+                    readerLogin.Close();
                     MessageBox.Show("Invalid username or password");
                 }
             }

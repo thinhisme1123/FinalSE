@@ -37,7 +37,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.nextBtn = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.qtyBtn = new System.Windows.Forms.TextBox();
+            this.qtyTxt = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.priceTxt = new System.Windows.Forms.TextBox();
@@ -46,8 +46,7 @@
             this.idProTxt = new System.Windows.Forms.TextBox();
             this.addBtn = new System.Windows.Forms.Button();
             this.showBtn = new System.Windows.Forms.Button();
-            this.idBillTxt = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.deleteBtn = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdGood)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -144,12 +143,12 @@
             this.label4.TabIndex = 23;
             this.label4.Text = "Quantity";
             // 
-            // qtyBtn
+            // qtyTxt
             // 
-            this.qtyBtn.Location = new System.Drawing.Point(160, 149);
-            this.qtyBtn.Name = "qtyBtn";
-            this.qtyBtn.Size = new System.Drawing.Size(166, 22);
-            this.qtyBtn.TabIndex = 24;
+            this.qtyTxt.Location = new System.Drawing.Point(160, 149);
+            this.qtyTxt.Name = "qtyTxt";
+            this.qtyTxt.Size = new System.Drawing.Size(166, 22);
+            this.qtyTxt.TabIndex = 24;
             // 
             // label5
             // 
@@ -228,22 +227,16 @@
             this.showBtn.UseVisualStyleBackColor = true;
             this.showBtn.Click += new System.EventHandler(this.showBtn_Click);
             // 
-            // idBillTxt
+            // deleteBtn
             // 
-            this.idBillTxt.Location = new System.Drawing.Point(452, 63);
-            this.idBillTxt.Name = "idBillTxt";
-            this.idBillTxt.Size = new System.Drawing.Size(166, 22);
-            this.idBillTxt.TabIndex = 33;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label7.Location = new System.Drawing.Point(344, 63);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(55, 20);
-            this.label7.TabIndex = 32;
-            this.label7.Text = "Bill ID";
+            this.deleteBtn.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deleteBtn.Location = new System.Drawing.Point(691, 174);
+            this.deleteBtn.Name = "deleteBtn";
+            this.deleteBtn.Size = new System.Drawing.Size(97, 32);
+            this.deleteBtn.TabIndex = 32;
+            this.deleteBtn.Text = "Delete";
+            this.deleteBtn.UseVisualStyleBackColor = true;
+            this.deleteBtn.Click += new System.EventHandler(this.deleteBtn_Click);
             // 
             // agentOrder
             // 
@@ -251,8 +244,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 482);
-            this.Controls.Add(this.idBillTxt);
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.deleteBtn);
             this.Controls.Add(this.showBtn);
             this.Controls.Add(this.addBtn);
             this.Controls.Add(this.idProTxt);
@@ -260,7 +252,7 @@
             this.Controls.Add(this.priceTxt);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.qtyBtn);
+            this.Controls.Add(this.qtyTxt);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.nextBtn);
             this.Controls.Add(this.label3);
@@ -292,7 +284,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button nextBtn;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox qtyBtn;
+        private System.Windows.Forms.TextBox qtyTxt;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox priceTxt;
@@ -301,7 +293,6 @@
         private System.Windows.Forms.TextBox idProTxt;
         private System.Windows.Forms.Button addBtn;
         private System.Windows.Forms.Button showBtn;
-        private System.Windows.Forms.TextBox idBillTxt;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button deleteBtn;
     }
 }

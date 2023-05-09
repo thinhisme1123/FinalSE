@@ -89,7 +89,7 @@ namespace FinalProjectSE
         {
             dk = 1;
             //adding prouct to product infor
-            string addItem = "insert into productInfor values (@proId,@proName,@quantity,@price)";
+            string addItem = "insert into productInfor(idProduct, productName, quantity, price) values (@proId,@proName,@quantity,@price)";
             cm = new SqlCommand(addItem, cn);
             cm.Parameters.AddWithValue("@proId", idProduct.Text);
             cm.Parameters.AddWithValue("@proName", namePro.Text);

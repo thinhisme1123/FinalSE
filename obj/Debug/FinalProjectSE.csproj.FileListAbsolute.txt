@@ -208,7 +208,6 @@ D:\DaiHoc\Hoc Ki 4\Software Engineering\Final\FinalSE\bin\Debug\System.Threading
 D:\DaiHoc\Hoc Ki 4\Software Engineering\Final\FinalSE\bin\Debug\System.ValueTuple.xml
 D:\DaiHoc\Hoc Ki 4\Software Engineering\Final\FinalSE\obj\Debug\FinalProjectSE.csproj.AssemblyReference.cache
 D:\DaiHoc\Hoc Ki 4\Software Engineering\Final\FinalSE\obj\Debug\FinalProjectSE.csproj.SuggestedBindingRedirects.cache
-D:\DaiHoc\Hoc Ki 4\Software Engineering\Final\FinalSE\obj\Debug\FinalProjectSE.exe.config
 D:\DaiHoc\Hoc Ki 4\Software Engineering\Final\FinalSE\obj\Debug\FinalProjectSE.App.resources
 D:\DaiHoc\Hoc Ki 4\Software Engineering\Final\FinalSE\obj\Debug\FinalProjectSE.DeliveryBill.resources
 D:\DaiHoc\Hoc Ki 4\Software Engineering\Final\FinalSE\obj\Debug\FinalProjectSE.Form1.resources
@@ -230,3 +229,5 @@ C:\Users\PC\OneDrive\Documents\GitHub\FinalSE\obj\Debug\FinalProjectSE.agentLogi
 C:\Users\PC\OneDrive\Documents\GitHub\FinalSE\obj\Debug\FinalProjectSE.agentOrder.resources
 C:\Users\PC\OneDrive\Documents\GitHub\FinalSE\obj\Debug\FinalProjectSE.agentPay.resources
 C:\Users\PC\OneDrive\Documents\GitHub\FinalSE\obj\Debug\FinalProjectSE.agentAdd.resources
+D:\DaiHoc\Hoc Ki 4\Software Engineering\Final\FinalSE\bin\Debug\Zen.Barcode.Core.dll
+D:\DaiHoc\Hoc Ki 4\Software Engineering\Final\FinalSE\bin\Debug\QRCoder.dll
