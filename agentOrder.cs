@@ -74,7 +74,7 @@ namespace FinalProjectSE
                 cm.ExecuteNonQuery();
                 priceTxt.Text = check.ToString();
             }
-            showData();
+            showData(); 
         }
 
         private void showBtn_Click(object sender, EventArgs e)
